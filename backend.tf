@@ -3,6 +3,6 @@ terraform {
     organization = "mfonseca-org"
 
     workspaces {
-      name = "tfc-guide-example""
+      name = "tfc-guide-example"
     }
   }
