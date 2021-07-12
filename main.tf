@@ -26,6 +26,7 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
     Env  = "env6"
   }
+}
 
 module "s3-webapp" {
   source  = "app.terraform.io/mfonseca-org/s3-webapp/aws"
@@ -33,5 +34,4 @@ module "s3-webapp" {
   name   = var.name
   region = var.region
   prefix = var.prefix
-  }
 }
