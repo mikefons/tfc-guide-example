@@ -13,3 +13,8 @@ variable "instance_name" {
   default     = "Provisioned by Terraform"
 }
 
+variable "aws_region" {
+  description = "AWS Region"
+  default     = "us-east-1"
+}
+
