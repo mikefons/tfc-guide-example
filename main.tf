@@ -24,6 +24,14 @@ resource "aws_instance" "ubuntu" {
 
   tags = {
     Name = var.instance_name
-    Env  = "env6"
+    Env  = "env7"
   }
+}
+
+module "s3-webapp" {
+  source  = "app.terraform.io/mfonseca-org/s3-webapp/aws"
+  version = "1.0.0"
+  name   = var.name
+  region = var.region
+  prefix = var.prefix
 }

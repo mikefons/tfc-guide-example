@@ -6,3 +6,6 @@ output "instance_arn" {
   value = aws_instance.ubuntu.arn
 }
 
+output "website_endpoint" {
+  value = module.s3-webapp.endpoint
+}
