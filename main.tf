@@ -30,7 +30,7 @@ resource "aws_instance" "ubuntu" {
 
 module "s3-webapp" {
   source  = "app.terraform.io/mfonseca-org/s3-webapp/aws"
-  version = "1.0.2"
+  version = "1.0.3"
   name   = var.name
   region = var.region
   prefix = var.prefix
